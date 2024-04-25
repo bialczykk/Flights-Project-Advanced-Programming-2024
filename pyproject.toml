@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "group-12"
+version = "0.1.0"
+description = "Group assignment for the course of Advanced Programming at the Nova Business School"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.1"
+numpy = "^1.26.4"
+geopandas = "^0.14.3"
+pylint = "^3.1.0"
+Sphinx = "^7.2.6"
+matplotlib = "^3.8.3"
+mypy = "^1.8.0"
+pydantic = "^2.6.2"
+ipykernel = "^6.29.3"
+geopy = "^2.4.1"
+pandas-stubs = "^2.2.0.240218"
+tqdm = "^4.66.2"
+pytest = "^8.0.2"
+openpyxl = "^3.1.2"
+contextily = "^1.5.2"
+langchain-openai = "^0.0.8"
+sphinx-rtd-theme = "^2.0.0"
+folium = "^0.16.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

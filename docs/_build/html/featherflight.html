@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>featherflight module &mdash; group_12 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            group_12
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">featherflight module</a><ul>
+<li><a class="reference internal" href="#featherflight.FeatherFlight"><code class="docutils literal notranslate"><span class="pre">FeatherFlight</span></code></a><ul>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.aircraft_info"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.aircraft_info()</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.aircrafts"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.aircrafts()</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.airlines"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.airlines</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.airplanes"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.airplanes</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.airport_info"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.airport_info()</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.airports"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.airports</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.calculate_distances_routes"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.calculate_distances_routes()</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.country_airports"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.country_airports()</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.creation_date"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.creation_date</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.data_source"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.data_source</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.distance_analysis"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.distance_analysis()</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.model_computed_fields"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.model_computed_fields</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.model_config"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.model_config</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.model_fields"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.model_fields</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.plot_flights"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.plot_flights()</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.plot_flights_from_country"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.plot_flights_from_country()</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.plot_top_airplane_models"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.plot_top_airplane_models()</span></code></a></li>
+<li><a class="reference internal" href="#featherflight.FeatherFlight.routes"><code class="docutils literal notranslate"><span class="pre">FeatherFlight.routes</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">group_12</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">featherflight module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/featherflight.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-featherflight">
+<span id="featherflight-module"></span><h1>featherflight module<a class="headerlink" href="#module-featherflight" title="Link to this heading"></a></h1>
+<p>This is the main module of the FeatherFlight class.
+The FeatherFlight is a class that has been developed by the data team at FeatherFlight Inc.
+to get a better understanding of all our flights and drive the sustainable transition
+in our company.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">featherflight.</span></span><span class="sig-name descname"><span class="pre">FeatherFlight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'https://gitlab.com/adpro1/adpro2024/-/raw/main/Files/flight_data.zip?inline=false'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creation_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">date</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">datetime.date(2024,</span> <span class="pre">3,</span> <span class="pre">16)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">airlines</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">airplanes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">airports</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">routes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#featherflight.FeatherFlight" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Class to get a better understanding of all our flights and drive the sustainable
+transition in our company.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.aircraft_info">
+<span class="sig-name descname"><span class="pre">aircraft_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aircraft_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#featherflight.FeatherFlight.aircraft_info" title="Link to this definition"></a></dt>
+<dd><p>Get information about an aircraft model with the use of OpenAI
+GPT-3.5-Turbo language model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>aircraft_name</strong> (<em>str</em>) – Name of the aircraft model</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Information about the aircraft model</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the aircraft name is not in the airplanes dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.aircrafts">
+<span class="sig-name descname"><span class="pre">aircrafts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#featherflight.FeatherFlight.aircrafts" title="Link to this definition"></a></dt>
+<dd><p>Print the list containing all unique airplane models appearing in the airplanes dataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of unique airplane models</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.airlines">
+<span class="sig-name descname"><span class="pre">airlines</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#featherflight.FeatherFlight.airlines" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.airplanes">
+<span class="sig-name descname"><span class="pre">airplanes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#featherflight.FeatherFlight.airplanes" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.airport_info">
+<span class="sig-name descname"><span class="pre">airport_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">airport_name_or_code</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#featherflight.FeatherFlight.airport_info" title="Link to this definition"></a></dt>
+<dd><p>Get information about an airport with the use of OpenAI GPT-3.5-Turbo language model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>airport_name_or_code</strong> (<em>str</em>) – Name or IATA code of the airport</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Information about the airport</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the airport name or code is not in the airports dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.airports">
+<span class="sig-name descname"><span class="pre">airports</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#featherflight.FeatherFlight.airports" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.calculate_distances_routes">
+<span class="sig-name descname"><span class="pre">calculate_distances_routes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#featherflight.FeatherFlight.calculate_distances_routes" title="Link to this definition"></a></dt>
+<dd><p>Calculate the distances between the source and destination airports for each route.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new column ‘distance_km’ is added to the routes dataframe. The coordinates of
+the source and destination airports are also added to the routes dataframe.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.country_airports">
+<span class="sig-name descname"><span class="pre">country_airports</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">country</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#featherflight.FeatherFlight.country_airports" title="Link to this definition"></a></dt>
+<dd><p>Plot a map with the locations of the airports in a country.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>country</strong> (<em>str</em>) – The name of the country.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A map with the locations of the airports in the country is plotted.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.creation_date">
+<span class="sig-name descname"><span class="pre">creation_date</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">date</span></em><a class="headerlink" href="#featherflight.FeatherFlight.creation_date" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.data_source">
+<span class="sig-name descname"><span class="pre">data_source</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#featherflight.FeatherFlight.data_source" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.distance_analysis">
+<span class="sig-name descname"><span class="pre">distance_analysis</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#featherflight.FeatherFlight.distance_analysis" title="Link to this definition"></a></dt>
+<dd><p>Plot a histogram of the distribution of flight distances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A histogram of the distribution of flight distances is plotted.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.model_computed_fields">
+<span class="sig-name descname"><span class="pre">model_computed_fields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ComputedFieldInfo</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#featherflight.FeatherFlight.model_computed_fields" title="Link to this definition"></a></dt>
+<dd><p>A dictionary of computed field names and their corresponding <cite>ComputedFieldInfo</cite> objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">ConfigDict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'arbitrary_types_allowed':</span> <span class="pre">True}</span></em><a class="headerlink" href="#featherflight.FeatherFlight.model_config" title="Link to this definition"></a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.model_fields">
+<span class="sig-name descname"><span class="pre">model_fields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'airlines':</span> <span class="pre">FieldInfo(annotation=DataFrame,</span> <span class="pre">required=False),</span> <span class="pre">'airplanes':</span> <span class="pre">FieldInfo(annotation=DataFrame,</span> <span class="pre">required=False),</span> <span class="pre">'airports':</span> <span class="pre">FieldInfo(annotation=DataFrame,</span> <span class="pre">required=False),</span> <span class="pre">'creation_date':</span> <span class="pre">FieldInfo(annotation=date,</span> <span class="pre">required=False,</span> <span class="pre">default=datetime.date(2024,</span> <span class="pre">3,</span> <span class="pre">16)),</span> <span class="pre">'data_source':</span> <span class="pre">FieldInfo(annotation=str,</span> <span class="pre">required=False,</span> <span class="pre">default='https://gitlab.com/adpro1/adpro2024/-/raw/main/Files/flight_data.zip?inline=false'),</span> <span class="pre">'routes':</span> <span class="pre">FieldInfo(annotation=DataFrame,</span> <span class="pre">required=False)}</span></em><a class="headerlink" href="#featherflight.FeatherFlight.model_fields" title="Link to this definition"></a></dt>
+<dd><p>Metadata about the fields defined on the model,
+mapping of field names to [<cite>FieldInfo</cite>][pydantic.fields.FieldInfo].</p>
+<p>This replaces <cite>Model.__fields__</cite> from Pydantic V1.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.plot_flights">
+<span class="sig-name descname"><span class="pre">plot_flights</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">airport</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">internal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#featherflight.FeatherFlight.plot_flights" title="Link to this definition"></a></dt>
+<dd><p>Plot flights leaving the given airport.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>airport</strong> (<em>str</em>) – The airport IATA code.</p></li>
+<li><p><strong>internal</strong> (<em>bool</em>) – Whether to plot internal flights only. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A plot of the flights leaving the given airport is displayed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.plot_flights_from_country">
+<span class="sig-name descname"><span class="pre">plot_flights_from_country</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">country</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">internal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#featherflight.FeatherFlight.plot_flights_from_country" title="Link to this definition"></a></dt>
+<dd><p>Plots all flights leaving from a given country to all other countries
+or only internal flights. Uses geopandas and matplotlib.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>country</strong> (<em>str</em>) – Country name</p></li>
+<li><p><strong>internal</strong> (<em>bool</em><em>, </em><em>optional</em>) – Plot internal flights only. Defaults to False.</p></li>
+<li><p><strong>cutoff</strong> (<em>float</em><em>, </em><em>optional</em>) – Cutoff distance for short haul flights. Defaults to 1000.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Plot of flights from the given country</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>AssertionError</strong> – If the given country name is not in the airports dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.plot_top_airplane_models">
+<span class="sig-name descname"><span class="pre">plot_top_airplane_models</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">countries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_models</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#featherflight.FeatherFlight.plot_top_airplane_models" title="Link to this definition"></a></dt>
+<dd><p>Plot the n most used airplane models by number of routes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>countries</strong> (<em>str</em><em> or </em><em>list</em><em> of </em><em>str</em>) – A country or a list of countries to filter the routes. Defaults to None.</p></li>
+<li><p><strong>n_models</strong> (<em>int</em>) – Number of airplane models to plot. Defaults to 5.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A bar plot of the n most used airplane models by number of routes is displayed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="featherflight.FeatherFlight.routes">
+<span class="sig-name descname"><span class="pre">routes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#featherflight.FeatherFlight.routes" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, M. Demarets, S. Vranken, A. Piredda, K. Bialczyk.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
